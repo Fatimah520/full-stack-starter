@@ -32,8 +32,12 @@ function Header() {
   return (
     <nav className="header navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          Full Stack Starter
+        <Link
+          className="navbar-brand"
+          to="/"
+          img
+          src="https://cdn.glitch.com/02323891-d81b-4238-8928-df1bf7508f76%2Fkisspng-palm-branch-clip-art-palm-trees-palm-leaf-manuscri-5b67cc7f62b5f4.0254050915335292154043-removebg-preview%20copy%202.png?v=1628410324005">
+          Home
         </Link>
         <button
           className="navbar-toggler"
@@ -49,7 +53,7 @@ function Header() {
           <ul className="navbar-nav flex-grow-1 mb-2 mb-md-0">
             <li className="nav-item active">
               <Link className="nav-link" aria-current="page" to="/">
-                Home
+                Bowls
               </Link>
             </li>
             <div className="flex-grow-1 d-flex justify-content-end">

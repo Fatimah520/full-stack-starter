@@ -5,6 +5,7 @@ import './App.scss';
 import { AuthContextProvider, AuthProtected } from './AuthContext';
 import Header from './Header';
 import Home from './Home';
+import New from './New';
 import Login from './Login';
 import PasswordRoutes from './Passwords/PasswordRoutes';
 import Register from './Register';
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/new/:id" element={<New />} />
           <Route path="/login" element={<Login />} />
           <Route path="/passwords/*" element={<PasswordRoutes />} />
           {process.env.REACT_APP_FEATURE_REGISTRATION === 'true' && <Route path="/register" element={<Register />} />}
