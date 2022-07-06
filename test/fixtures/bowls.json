@@ -1,0 +1,18 @@
+[
+  {
+    "model": "bowls",
+    "data": {
+      "id": 1,
+      "Name": "Test",
+      "short": "hello"
+    }
+  },
+  {
+    "model": "bowls",
+    "data": {
+      "id": 2,
+      "Name": "Test",
+      "short": "hello"
+    }
+  }
+]
