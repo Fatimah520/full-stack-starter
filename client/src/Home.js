@@ -18,7 +18,7 @@ function Home() {
       <br />
       <div className="row">
         {items.map((item) => (
-          <Item title={item.fields.Name} text={item.fields.short} />
+          <Item Title={item.fields.Title} Subtitle={item.fields.Subtitle} Tagline={item.fields.Tagline} Image={item.fields.Image[0].url} />
         ))}
       </div>
     </main>
