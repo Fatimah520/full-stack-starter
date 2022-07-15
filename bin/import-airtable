@@ -11,7 +11,7 @@ fetch('https://api.airtable.com/v0/appZ5I5hWkEFGBtuy/Table%201?api_key=keyv4rciC
   .then(async (data) => {
     for (const record of data.records) {
       const { fields } = record;
-      const bowls = models.bowls.build({
+      const bowls = models.Bowl.build({
         Title: fields.Title,
         Subtitle: fields.Subtitle,
         Tagline: fields.Tagline,

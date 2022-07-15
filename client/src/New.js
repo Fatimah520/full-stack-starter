@@ -1,3 +1,4 @@
+import './New.scss';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -20,7 +21,8 @@ function New() {
   return (
     <main className="container">
       <h1> {data?.Title} </h1>
-      <p>{JSON.stringify(data)}</p>
+      {/* <p>{JSON.stringify(data)}</p> */}
+      <h2 className="Subtitle">{data?.Subtitle} </h2>
     </main>
   );
 }
