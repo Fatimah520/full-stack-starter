@@ -10,13 +10,13 @@ const router = express.Router();
 
 // path: /api/bowls
 router.get('/', async (req, res) => {
-  const records = await models.bowls.findAll();
+  const records = await models.Bowl.findAll();
   res.json(records.map((r) => r.toJSON()));
 });
 
 // path: /api/bowls/:id
 router.get('/:id', async (req, res) => {
-  const record = await models.bowls.findByPk(req.params.id);
+  const record = await models.Bowl.findByPk(req.params.id);
   if (record) {
     res.json(record.toJSON());
   } else {

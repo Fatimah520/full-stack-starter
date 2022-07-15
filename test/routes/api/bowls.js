@@ -26,8 +26,10 @@ describe('/api/bowls', () => {
     it('returns one bowls by id', async () => {
       const response = await testSession.get('/api/bowls/1').expect(HttpStatus.OK);
       const bowl = response.body;
-      assert.deepStrictEqual(bowl.Name, 'Test');
-      assert.deepStrictEqual(bowl.short, 'hello');
+      assert.deepStrictEqual(bowl.Title, 'Test1');
+      assert.deepStrictEqual(bowl.Subtitle, 'hello1');
+      assert.deepStrictEqual(bowl.Tagline, 'join1');
+      assert.deepStrictEqual(bowl.Image, 'welcome1');
     });
 
     it('returns NOT FOUND for an id not in the database', async () => {
