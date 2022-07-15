@@ -9,7 +9,7 @@ function New() {
   useEffect(
     function () {
       if (id) {
-        fetch(`https://api.airtable.com/v0/appZ5I5hWkEFGBtuy/Table%201/${id}?api_key=keyv4rciCGYhYGZiY`)
+        fetch(`/api/bowls/${id}`)
           .then((response) => response.json())
           .then((data) => setData(data));
       }
@@ -19,7 +19,7 @@ function New() {
 
   return (
     <main className="container">
-      <h1> {data?.fields?.Title} </h1>
+      <h1> {data?.Title} </h1>
       <p>{JSON.stringify(data)}</p>
     </main>
   );

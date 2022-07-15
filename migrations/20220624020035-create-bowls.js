@@ -8,10 +8,16 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      Name: {
+      Title: {
         type: Sequelize.STRING,
       },
-      short: {
+      Subtitle: {
+        type: Sequelize.STRING,
+      },
+      Tagline: {
+        type: Sequelize.STRING,
+      },
+      Image: {
         type: Sequelize.STRING,
       },
       createdAt: {

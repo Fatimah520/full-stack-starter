@@ -1,6 +1,7 @@
 .card {
-  font-size: smaller;
+  font-size: 17px;
   color: azure;
+  margin-right: 200px;
 }
 
 .card-body {
@@ -18,48 +19,39 @@
   width: 96px;
 }
 
-.initial {
-  height: 480.5px;
-  width: 990px;
-  padding-left: 3.5in !important;
-  margin-top: -310px;
-}
-
-.left {
-  height: 430.5px;
-  width: 480px;
-  margin-left: -1008px;
-  margin-top: -50px;
-}
-
-.right {
-  height: 460.5px;
-  width: 430px;
-  margin-left: 850px;
-  margin-top: -470px;
-}
-
-.join {
-  height: 550px;
-  width: 700px;
-  margin-top: -840px;
-  margin-left: 310px;
-}
-
 .btn-light {
-  margin-left: 600px;
+  margin-left: 390px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-top: -300px;
+  margin-top: -500px;
   width: 130px;
   height: 45px;
 }
 
 .card-title {
+  color: azure;
+  font-size: 60px;
+  margin-left: 360px;
+  margin-top: 50px;
+}
+
+.bowl {
+  margin-top: 50px;
+}
+
+.pic {
+  width: 405px;
+  height: 480px;
+  margin-top: -167px;
+  margin-left: 873px;
+}
+
+.card-text {
+  margin-left: 365.5px;
+  margin-top: -12px;
   color: black;
 }
 
-.card {
-  margin-top: 50px;
-}
-.bowl {
+.tagline {
+  margin-left: 362.5px;
+  margin-top: 80px;
 }

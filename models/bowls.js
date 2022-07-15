@@ -13,8 +13,10 @@ module.exports = (sequelize, DataTypes) => {
   }
   bowls.init(
     {
-      Name: DataTypes.STRING,
-      short: DataTypes.STRING,
+      Title: DataTypes.STRING,
+      Subtitle: DataTypes.STRING,
+      Tagline: DataTypes.STRING,
+      Image: DataTypes.STRING,
     },
     {
       sequelize,
