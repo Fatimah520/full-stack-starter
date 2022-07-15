@@ -3,26 +3,30 @@ const assert = require('assert');
 const helper = require('../helper');
 const models = require('../../models');
 
-describe('models.bowls', () => {
+describe('models.Bowl', () => {
   beforeEach(async () => {
     await helper.loadFixtures(['bowls']);
   });
 
-  it('creates a new Item record', async () => {
-    let item = models.bowls.build({
-      Name: 'Test Title',
-      short: 'This is longer test Text.',
+  it('creates a new Bowl record', async () => {
+    let item = models.Bowl.build({
+      Title: 'Test Title',
+      Subtitle: 'This is longer test Text.',
+      Tagline: 'Testing',
+      Image: 'Test',
     });
     assert.deepStrictEqual(item.id, null);
     await item.save();
     assert(item.id);
 
-    item = await models.bowls.findByPk(item.id);
-    assert.deepStrictEqual(item.Name, 'Test Title');
-    assert.deepStrictEqual(item.short, 'This is longer test Text.');
+    item = await models.Bowl.findByPk(item.id);
+    assert.deepStrictEqual(item.Title, 'Test Title');
+    assert.deepStrictEqual(item.Subtitle, 'This is longer test Text.');
+    assert.deepStrictEqual(item.Tagline, 'Testing');
+    assert.deepStrictEqual(item.Image, 'Test');
   });
   it('returns all the bowls', async () => {
-    const results = await models.bowls.findAll();
+    const results = await models.Bowl.findAll();
     assert.deepStrictEqual(results.length, 2);
   });
 });

@@ -1,18 +1,22 @@
 [
   {
-    "model": "bowls",
+    "model": "Bowl",
     "data": {
       "id": 1,
-      "Name": "Test",
-      "short": "hello"
+      "Title": "Test1",
+      "Subtitle": "hello1",
+      "Tagline": "join1",
+      "Image": "welcome1"
     }
   },
   {
-    "model": "bowls",
+    "model": "Bowl",
     "data": {
       "id": 2,
-      "Name": "Test",
-      "short": "hello"
+      "Title": "Test2",
+      "Subtitle": "hello2",
+      "Tagline": "join2",
+      "Image": "welcome2"
     }
   }
 ]
