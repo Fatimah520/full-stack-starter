@@ -6,6 +6,7 @@ import { AuthContextProvider, AuthProtected } from './AuthContext';
 import Header from './Header';
 import Home from './Home';
 import New from './New';
+import ItemForm from './ItemForm';
 import Login from './Login';
 import PasswordRoutes from './Passwords/PasswordRoutes';
 import Register from './Register';
@@ -18,6 +19,22 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route
+            path="/detail/new"
+            element={
+              <AuthProtected isAdminRequired={true}>
+                <ItemForm />
+              </AuthProtected>
+            }
+          />
+          <Route
+            path="/detail/:id/edit"
+            element={
+              <AuthProtected isAdminRequired={true}>
+                <ItemForm />
+              </AuthProtected>
+            }
+          />
           <Route path="/new/:id" element={<New />} />
           <Route path="/login" element={<Login />} />
           <Route path="/passwords/*" element={<PasswordRoutes />} />

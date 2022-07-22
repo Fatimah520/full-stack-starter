@@ -1,6 +1,7 @@
 import './New.scss';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { useAuthContext } from './AuthContext';
 
 function New() {
   const { id } = useParams();
