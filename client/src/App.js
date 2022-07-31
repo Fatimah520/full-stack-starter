@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/detail/new"
+            path="/new/new"
             element={
               <AuthProtected isAdminRequired={true}>
                 <ItemForm />
@@ -28,7 +28,7 @@ function App() {
             }
           />
           <Route
-            path="/detail/:id/edit"
+            path="/new/:id/edit"
             element={
               <AuthProtected isAdminRequired={true}>
                 <ItemForm />

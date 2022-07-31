@@ -52,23 +52,22 @@ function ItemForm() {
               <input type="text" className="form-control" id="Title" name="Title" onChange={onChange} value={data.Title} />
             </div>
             <div className="mb-3">
-              <label className="form-label" htmlFor="Text">
-                Text
+              <label className="form-label" htmlFor="Subtitle">
+                Subtitle
               </label>
-              <input type="text" className="form-control" id="Text" name="Text" onChange={onChange} value={data.Text} />
+              <input type="text" className="form-control" id="Subtitle" name="Subtitle" onChange={onChange} value={data.Subtitle} />
             </div>
             <div className="mb-3">
-              <label className="form-label" htmlFor="AttachmentUrl">
-                Attachment URL
+              <label className="form-label" htmlFor="Tagline">
+                Tagline
               </label>
-              <input
-                type="text"
-                className="form-control"
-                id="AttachmentUrl"
-                name="AttachmentUrl"
-                onChange={onChange}
-                value={data.AttachmentUrl}
-              />
+              <input type="text" className="form-control" id="Tagline" name="Tagline" onChange={onChange} value={data.Tagline} />
+            </div>
+            <div className="mb-3">
+              <label className="form-label" htmlFor="Image">
+                Image
+              </label>
+              <input type="text" className="form-control" id="Image" name="Image" onChange={onChange} value={data.Image} />
             </div>
             <button type="submit" className="btn btn-primary">
               Submit
