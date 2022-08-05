@@ -27,7 +27,7 @@ function ItemForm() {
       } else {
         response = await Api.bowls.create(data);
       }
-      navigate(`/new/${response.data.id}`);
+      navigate(`/bowls/${response.data.id}`);
     } catch (error) {
       console.log(error);
     }

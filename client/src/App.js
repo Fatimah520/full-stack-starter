@@ -5,7 +5,7 @@ import './App.scss';
 import { AuthContextProvider, AuthProtected } from './AuthContext';
 import Header from './Header';
 import Home from './Home';
-import New from './New';
+import Bowl from './Bowl';
 import ItemForm from './ItemForm';
 import Login from './Login';
 import PasswordRoutes from './Passwords/PasswordRoutes';
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/new/new"
+            path="/bowls/new"
             element={
               <AuthProtected isAdminRequired={true}>
                 <ItemForm />
@@ -28,14 +28,14 @@ function App() {
             }
           />
           <Route
-            path="/new/:id/edit"
+            path="/bowls/:id/edit"
             element={
               <AuthProtected isAdminRequired={true}>
                 <ItemForm />
               </AuthProtected>
             }
           />
-          <Route path="/new/:id" element={<New />} />
+          <Route path="/bowls/:id" element={<Bowl />} />
           <Route path="/login" element={<Login />} />
           <Route path="/passwords/*" element={<PasswordRoutes />} />
           {process.env.REACT_APP_FEATURE_REGISTRATION === 'true' && <Route path="/register" element={<Register />} />}

@@ -11,7 +11,7 @@ function Item({ id, Title, Subtitle, Tagline, Image }) {
           <img src={Image} className="pic" />
         </p>
 
-        <Link to={`/new/${id}`} class="btn btn-light">
+        <Link to={`/bowls/${id}`} class="btn btn-light">
           Show more
         </Link>
       </div>

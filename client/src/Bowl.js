@@ -1,9 +1,9 @@
-import './New.scss';
+import './Bowl.scss';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useAuthContext } from './AuthContext';
 
-function New() {
+function Bowl() {
   const { id } = useParams();
 
   const [data, setData] = useState();
@@ -27,4 +27,4 @@ function New() {
     </main>
   );
 }
-export default New;
+export default Bowl;
