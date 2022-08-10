@@ -6,10 +6,10 @@ function ItemForm() {
   const navigate = useNavigate();
   const { id } = useParams();
   const [data, setData] = useState({
-    Title: 'Test1',
-    Subtitle: 'hello1',
-    Tagline: 'join1',
-    Image: 'welcome1',
+    Title: '',
+    Subtitle: '',
+    Tagline: '',
+    Image: '',
   });
 
   useEffect(() => {

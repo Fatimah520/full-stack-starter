@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import './Home.scss';
 import { useAuthContext } from './AuthContext';
 import Item from './Components/Item';
 
@@ -24,6 +25,14 @@ function Home() {
           </Link>
         </p>
       )}
+      <div className="row">
+        <div class="intro">
+          <div class="card-body text">
+            <h3>Health is Wealth.</h3>
+            <h4>Inayahs Exotic Stirs</h4>
+          </div>
+        </div>
+      </div>
       <div className="row">
         {items.map((item) => (
           <Item Title={item.Title} Subtitle={item.Subtitle} Tagline={item.Tagline} Image={item.Image} id={item.id} />

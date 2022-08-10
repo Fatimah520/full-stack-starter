@@ -36,7 +36,7 @@ const Api = {
       return instance.post('/api/auth/register', data);
     },
   },
-  items: {
+  bowls: {
     index() {
       return instance.get('/api/bowls');
     },
