@@ -28,6 +28,10 @@ function Home() {
       <div className="row">
         <div class="intro">
           <div class="card-body text">
+            <img
+              className="star"
+              src="https://i.pinimg.com/originals/ff/29/f5/ff29f5033d893f5d75575c56e9ab50e6.gif
+            "></img>
             <h3>Health is Wealth.</h3>
             <h4>Inayahs Exotic Stirs</h4>
           </div>
