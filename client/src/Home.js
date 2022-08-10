@@ -34,6 +34,13 @@ function Home() {
             "></img>
             <h3>Health is Wealth.</h3>
             <h4>Inayahs Exotic Stirs</h4>
+            <h2>
+              When my grandma passed away from cancer, I realized <br></br> that my lifestyle needed to be changed. I immersed myself{' '}
+              <br></br> into research and found that there are various options and <br></br> alternatives to snacks and drinks I would
+              consume. Slowly <br></br> but surely, I adapted to this lifestyle of making quick recipes <br></br> for breakfast that aren't
+              only energizing, but filling. Inayahs <br></br> Exotic Stirs is where I share these recipes and spread happiness.
+              <br></br>{' '}
+            </h2>
           </div>
         </div>
       </div>
