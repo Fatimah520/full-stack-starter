@@ -52,9 +52,7 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul className="navbar-nav flex-grow-1 mb-2 mb-md-0">
             <li className="nav-item active">
-              <Link className="nav-link" aria-current="page" to="/">
-                Bowls
-              </Link>
+              <Link className="nav-link" aria-current="page" to="/"></Link>
             </li>
             <div className="flex-grow-1 d-flex justify-content-end">
               {user && (
